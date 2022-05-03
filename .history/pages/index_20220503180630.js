@@ -76,7 +76,7 @@ export async function getStaticProps() {
           description:meetup.description,
         }
       }),
-      revalidate: 1,
+      revalidate: 10,
     },
   };
 }

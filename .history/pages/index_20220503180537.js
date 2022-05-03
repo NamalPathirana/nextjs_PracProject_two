@@ -35,7 +35,6 @@ const HomePage = (props) => {
     <Fragment>
       <Head>
         <title>React Meetups</title>
-        <meta name="description" content="Brows meetup locations"></meta>
       </Head>
       <MeetupList meetups={props.meetups}></MeetupList>
     </Fragment>
@@ -76,7 +75,7 @@ export async function getStaticProps() {
           description:meetup.description,
         }
       }),
-      revalidate: 1,
+      revalidate: 10,
     },
   };
 }
